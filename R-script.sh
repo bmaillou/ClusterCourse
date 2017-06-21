@@ -9,6 +9,6 @@ module load R/3.4.0
 clear
 echo "Testing an R scipt"> R-script.log
 
-R R_script.R
+R CMD BATCH R_script.R
 
 
