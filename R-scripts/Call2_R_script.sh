@@ -1,8 +1,9 @@
-#
 #!/bin/bash
-#$ -M mg3749@cumc.columbia.edu
-#$ -m e 
-#
-#
-R CMD BATCH 2.R script for bash.R
-#
+#$ -cwd -S /bin/bash
+#$ -l mem=3G
+#$ -l time=:40:
+
+$MODULESHOME/init/bash
+module load R/3.4.0
+
+R CMD BATCH 2.R_script_for_bash.R
